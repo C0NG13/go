@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goPhish! Game</title>
+    <style>
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+	<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, click the SPAM icon next to the email. If an email is safe, open it. When you have completed checking the email inbox, click the TALLY button. Get a minimum of 70 points to win the level. To gain points open important emails. To lose points get phished!')">Directions</button>
+
+    <div class="center-text">
+        <h2>goPhish!</h2>
+        <h3>Do you have what it takes to not get phished?</h3>
+        <h4>Please select your player.</h4>
+        <h5> </h5>
+		<button onclick="window.location.href='student.html'">Student</button>
+      		<button onclick="window.location.href='lawyer.html'">Lawyer</button>  
+		<button onclick="window.location.href='physicist.html'">Physicist</button>
+      		<button onclick="window.location.href='senator.html'">Senator</button>  	
+
+    </div>
+</body>
+</html>
