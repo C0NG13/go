@@ -1,91 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-/* Modal styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-header {
-  background-color: #3498db;
-  color: white;
-  padding: 8px; /* thinner header band */
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.modal-content {
-  background-color: #f4f4f4;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: calc(80% + 4in); /* make box wider by 4 inches */
-  max-width: calc(480px + 4in); /* maximum width with additional 4 inches */
-  border-radius: 5px;
-}
-
-.close {
-  color: red;
-  float: right;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: darkred;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alert Dialog Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goPhish! Game</title>
+    <style>
+        .center-text {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-
-<button onclick="showAlert()">Show Alert</button>
-
-<div id="alertModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close" onclick="closeAlert()">&times;</span>
-      <h2>Email Username &nbsp;&nbsp;&nbsp;&nbsp; Subject of Email</h2>
-    </div>
-    <p>To: <a href="student@email.com">student@email.com</a></p>
-	<p>To: <a href="person@email.com">person@email.com</a></p>
-
+	<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, do not open it. If an email is safe, open it. When you have completed checking the email inbox, click the HOME button.')">Directions</button>
 	
-	<p>Dear person,</p>
-	<p>words    words</p>
-	<p>please click this link:</p>
-	<p>To: <a href="ww_w.BadGuysWinAgain.com">www.freestuff.com</a></p>
-    <button onclick="closeAlert()">OK</button>
-  </div>
-</div>
+    <div class="center-text">
+        <h2>goPhish!</h2>
+        <h3>Do you have what it takes to not get phished?</h3>
+        <h4>Please select your player.</h4>
+        <h5> </h5>
+		<button onclick="window.location.href='student.html'">Student</button>
+      		<button onclick="window.location.href='lawyer.html'">Physicist</button>  
+		<button onclick="window.location.href='physicist.html'">Senator</button>
+      		<button onclick="window.location.href='senator.html'">Director of NASA</button>  	
 
-<script>
-// Function to display the alert dialog
-function showAlert() {
-  var modal = document.getElementById("alertModal");
-  modal.style.display = "block";
-}
-
-// Function to close the alert dialog
-function closeAlert() {
-  var modal = document.getElementById("alertModal");
-  modal.style.display = "none";
-}
-</script>
-
+    </div>
 </body>
 </html>
