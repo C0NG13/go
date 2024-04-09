@@ -19,9 +19,9 @@
         <h4>Please select your player.</h4>
         <h5> </h5>
 		<button onclick="window.location.href='student.html'">Student</button>
-      		<button onclick="window.location.href='lawyer.html'">Lawyer</button>  
-		<button onclick="window.location.href='physicist.html'">Physicist</button>
-      		<button onclick="window.location.href='senator.html'">Senator</button>  	
+      		<button onclick="window.location.href='lawyer.html'">Physicist</button>  
+		<button onclick="window.location.href='physicist.html'">Senator</button>
+      		<button onclick="window.location.href='senator.html'">Director of NASA</button>  	
 
     </div>
 </body>
