@@ -28,10 +28,10 @@ body {
         }
         
         .button-container button {
-    margin: 5px 0 5px 0in; /* Top, right, bottom, left margins */
+    margin: 5px 5in 5px 5in; /* Top, right, bottom, left margins */
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #00008B;
     color: white;
     border: none;
     border-radius: 5px;
@@ -42,141 +42,298 @@ body {
 
 
         .button-container button:hover {
-            background-color: #45a049;
+            background-color: #228B22;
         }
 
         /* Style for the modal */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
-            padding-top: 100px; /* Adjust as needed */
-        }
+        
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-        /* Modal content */
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 400px; /* Adjust as needed */
-            text-align: center;
-            border-radius: 5px;
+.modal-header {
+  background-color: #3498db;
+  color: white;
+  padding: 8px; /* thinner header band */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 
-        }
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: calc(80% + 4in); /* make box wider by 4 inches */
+  max-width: calc(480px + 4in); /* maximum width with additional 4 inches */
+  border-radius: 5px;
+}
 
-        /* Close button */
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
+.close {
+  color: red;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
+.close:hover,
+.close:focus {
+  color: darkred;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
     </style></head>
 <body>
-
-	<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, click the SPAM icon next to the email. If an email is safe, open it. When you have completed checking the email inbox, click the TALLY button. Get a minimum of 70 points to win the level. To gain points open, important emails. To lose points, get phished!')">Directions</button>
+	<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, do not open it. If an email is safe, open it. When you have completed checking the email inbox, click the HOME button.')">Directions</button>
+	<button onclick="window.location.href='main.html'">Home</button>
 
     <div class="center-text">
 	<h1>Student Email</h1>
-   </div>
+ <!-- Button to open modal -->
+<div class="button-container">
+<button onclick="showModal('myModal')">Professor Tempest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Announcement: Oral Exams Next Week</button>
+</div>
 
-    <div class="button-container">
-        <button data-email="Email 1">&nbsp;&nbsp;&nbsp;&nbsp;Professor Tempest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Announcement: Oral Exams Next Week</button><br>
-        <button data-email="Email 2">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
-	<button data-email="Email 2">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
+<div class="button-container">
+<button onclick="showModal('myModal2')">Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button>
+</div>
 
-	<button data-email="Email 3">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
-	<button data-email="Email 4">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
+<div class="button-container">
+<button onclick="showModal('myModal3')">The IRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interest Fees on Your Late Tax Payment</button>
+</div>
 
-        <button data-email="Email 5">&nbsp;&nbsp;&nbsp;&nbsp;Professor Tempest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Announcement: Oral Exams Next Week</button><br>
-        <button data-email="Email 6">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
-	<button data-email="Email 7">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
+<div class="button-container">
+<button onclick="showModal('myModal4')">Freebies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free Tooth Paste!</button>
+</div>
 
-	<button data-email="Email 8">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
-	<button data-email="Email 9">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
-        <button data-email="Email 10">&nbsp;&nbsp;&nbsp;&nbsp;Professor Tempest&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Announcement: Oral Exams Next Week</button><br>
-        <button data-email="Email 11">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
-	<button data-email="Email 12">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
+<div class="button-container">
+<button onclick="showModal('myModal5')">Credit Card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Payment is Late</button>
+</div>
 
-	<button data-email="Email 13">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
-	<button data-email="Email 14">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
-	<button data-email="Email 15">&nbsp;&nbsp;&nbsp;&nbsp;Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button><br>
+<div class="button-container">
+<button onclick="showModal('myModal6')">Post&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packag is Shipped</button>
+</div>
+
+<div class="button-container">
+<button onclick="showModal('myModal7')">Peter Parker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class Notes Attached</button>
+</div>
+
+<div class="button-container">
+<button onclick="showModal('myModal8')">Show Modal 8</button>
+</div>
+
+<div class="button-container">
+<button onclick="showModal('myModal9')">Show Modal 9</button>
+</div>
+
+<div class="button-container">
+<button onclick="showModal('myModal10')">Show Modal 10</button>
+</div>
 
 
-        <!-- Add more buttons here -->
+<!-- Modal 1 -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal('myModal')">&times;</span>
+      <h2>Professor Tempest &nbsp;&nbsp;&nbsp;&nbsp; Announcement: Oral Exams Next Week</h2>
     </div>
+    <p>To: <a href="student@schoolemail.com">student@schoolemail.com</a></p>
+    <p>From: <a href="professort@schoolemail.com">professort@schoolemail.com</a></p>
+    <p>Dear Class,</p>
+    <p>Class is cancelled this week due to oral exams. Please schedule with my assistant, Sarah, to take you exam during office hours.</p>
+    <p>Sincerely,</p>
+    <p>Professor T</p>
+    <button onclick="closeModal('myModal')">close</button>
+  </div>
+</div>
 
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="document.getElementById('myModal').style.display = 'none'">&times;</span>
-            <p id="modalText"></p>
-        </div>
+
+<!-- Modal 2 -->
+<div id="myModal2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal('myModal2')">&times;</span>
+      <h2>Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</h2>
     </div>
+    <p>To: <a href="student@schoolemail.com">student@schoolemail.com</a></p>
+    <p>From: <a href="professorm@schoolemail.com">professorm@schoolemail.com</a></p>
+    <p>Dear All,</p>
+    <p>I am attending the Symmetric Spaces talk at the Universityof Warwick this Tuesday. If any of you would like to attend with me, please reply to this email.</p>
+    <p>Sincerely,</p>
+    <p>Professor Moriarty</p>
+   <button onclick="closeModal('myModal2')">close</button>
+  </div>
+</div>
 
-    <!-- JavaScript to handle the modal -->
-    <script>
-        var emailContent = {
-            "Email 1": "Dear All, \nI am going to the Symmetric Spaces talk at the University of Warwick on Tuesday. If you would like to come along with me, please respond to this email. \nProf. Moriarty\n\<meme_imgage\>",
-            "Email 2": "Dear Class, \nClass is cancelled next week. Contact my assistant, Sarah, to schedule your exam time. \nSincerely,\nProfessor T ",
+<!-- Modal 3 -->
+<div id="myModal3" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal('myModal3')">&times;</span>
+      <h2>The IRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interest Fees on Your Late Tax Payment</h2>
+    </div>
+    <p>To: <a href="student@email.com">student@email.com</a></p>
+    <p>From: <a href="wewin@badguys.com">theirs@irs.gov</a></p>
+    <p>Dear Citizen,</p>
+    <p>Youre late on your dues. Pay now! </p>
+    <p>Please click this link make a payment:</p>
+    <p>To: <a href="http://w_ww.BadGuys.com">www.theirs.com</a></p>
+    <button onclick="closeModal('myModal3')">OK</button>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div id="myModal4" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal('myModal4')">&times;</span>
+      <h2>Freebies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free Tooth Paste!</h2>
+    </div>
+    <p>To: <a href="student@email.com">student@email.com</a></p>
+    <p>From: <a href="person@email.com">person@email.com</a></p>
+    <p>Dear person,</p>
+    <p>words    words</p>
+    <p>please click this link:</p>
+    <p>To: <a href="http://www.freestuff.com">www.freestuff.com</a></p>
+    <button onclick="closeModal('myModal4')">OK</button>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div id="myModal5" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal('myModal5')">&times;</span>
+      <h2>Credit Card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Payment is Late</h2>
+    </div>
+    <p>To: <a href="student@email.com">student@email.com</a></p>
+    <p>From: <a href="person@email.com">person@email.com</a></p>
+    <p>Dear person,</p>
+    <p>words    words</p>
+    <p>please click this link:</p>
+    <p>To: <a href="http://www.freestuff.com">www.freestuff.com</a></p>
+    <button onclick="closeModal('myModal5')">OK</button>
+  </div>
+</div>
+
+<!-- Modal 6 -->
+<div id="myModal6" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal('myModal6')">&times;</span>
+      <h2>Post&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packag is Shipped</h2>
+    </div>
+    <p>To: <a href="student@email.com">student@email.com</a></p>
+    <p>From: <a href="person@email.com">person@email.com</a></p>
+    <p>Dear person,</p>
+    <p>words    words</p>
+    <p>please click this link:</p>
+    <p>To: <a href="http://www.freestuff.com">www.freestuff.com</a></p>
+    <button onclick="closeModal('myModal6')">OK</button>
+  </div>
+</div>
+
+<!-- Modal 7 -->
+<div id="myModal7" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal('myModal7')">&times;</span>
+      <h2>Email Username &nbsp;&nbsp;&nbsp;&nbsp; Subject of Email</h2>
+    </div>
+    <p>To: <a href="student@email.com">student@email.com</a></p>
+    <p>From: <a href="person@email.com">person@email.com</a></p>
+    <p>Dear person,</p>
+    <p>words    words</p>
+    <p>please click this link:</p>
+    <p>To: <a href="http://www.freestuff.com">www.freestuff.com</a></p>
+    <button onclick="closeModal('myModal7')">OK</button>
+  </div>
+</div>
+
+<!-- Modal 8 -->
+<div id="myModal8" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal('myModal8')">&times;</span>
+      <h2>Email Username &nbsp;&nbsp;&nbsp;&nbsp; Subject of Email</h2>
+    </div>
+    <p>To: <a href="student@email.com">student@email.com</a></p>
+    <p>From: <a href="person@email.com">person@email.com</a></p>
+    <p>Dear person,</p>
+    <p>words    words</p>
+    <p>please click this link:</p>
+    <p>To: <a href="http://www.freestuff.com">www.freestuff.com</a></p>
+    <button onclick="closeModal('myModal8')">OK</button>
+  </div>
+</div>
+
+
+<!-- Modal 9 -->
+<div id="myModal9" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal('myModal9')">&times;</span>
+      <h2>Email Username &nbsp;&nbsp;&nbsp;&nbsp; Subject of Email</h2>
+    </div>
+    <p>To: <a href="student@email.com">student@email.com</a></p>
+    <p>From: <a href="person@email.com">person@email.com</a></p>
+    <p>Dear person,</p>
+    <p>words    words</p>
+    <p>please click this link:</p>
+    <p>To: <a href="http://www.freestuff.com">www.freestuff.com</a></p>
+    <button onclick="closeModal('myModal9')">OK</button>
+  </div>
+</div>
+
+
+<!-- Modal 10 -->
+<div id="myModal10" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close" onclick="closeModal('myModal10')">&times;</span>
+      <h2>Email Username &nbsp;&nbsp;&nbsp;&nbsp; Subject of Email</h2>
+    </div>
+    <p>To: <a href="student@email.com">student@email.com</a></p>
+    <p>From: <a href="person@email.com">person@email.com</a></p>
+    <p>Dear person,</p>
+    <p>words    words</p>
+    <p>please click this link:</p>
+    <p>To: <a href="http://www.freestuff.com">www.freestuff.com</a></p>
+    <button onclick="closeModal('myModal10')">OK</button>
+  </div>
+</div>
 
 
 
-	    "Email 3": "MESSAGE",
-            "Email 4": "MESSAGE",
-	    "Email 5": "MESSAGE",
-            "Email 6": "MESSAGE",
-	    "Email 7": "MESSAGE",
-            "Email 8": "MESSAGE",
-	    "Email 9": "MESSAGE",
-            "Email 10": "MESSAGE",
-	    "Email 11": "MESSAGE",
-            "Email 12": "MESSAGE",
-	    "Email 13": "MESSAGE",
-            "Email 14": "MESSAGE",
-            "Email 15": "MESSAGE",
-            // Add more email content here
-        };
 
-		// Function to replace '\n' characters with '<br>' tags
-	function formatMessage(message) {
-	    return message.replace(/\n/g, "<br>");
-	}
 
-	// Event listener for each button to open the modal with the appropriate email content
-	var buttons = document.querySelectorAll('.button-container button');
-	buttons.forEach(function(button) {
-    button.addEventListener('click', function() {
-	        var emailName = this.getAttribute('data-email');
- 	       document.getElementById("myModal").style.display = "block";
-   	     document.getElementById("modalText").innerHTML = formatMessage(emailContent[emailName]);
- 	   });
-	});
+<script>
+// Function to display the modal
+function showModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "block";
+}
 
-        // Event listener for each button to open the modal with the appropriate email content
-        var buttons = document.querySelectorAll('.button-container button');
-        buttons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                var emailName = this.getAttribute('data-email');
-                document.getElementById("myModal").style.display = "block";
-                document.getElementById("modalText").innerText = emailContent[emailName];
-            });
-        });
-    </script>
+// Function to close the modal
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "none";
+}
+</script>
+
+
 </body>
 </html>
