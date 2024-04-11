@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 1</title>
+    <title>Level 2</title>
 <style>
 body {
     background-color: grey; /* Change background color to black */
@@ -96,51 +96,39 @@ body {
 
     </style></head>
 <body>
-	<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, do not open it. If an email is safe, open it. When you have completed checking the email inbox, click the HOME button.')">Directions</button>
+	<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, do not open it. If an email is safe, open it. Click links that you think are safe. When you have completed checking the email inbox, click the HOME button.')">Directions</button>
 	<button onclick="window.location.href='main.html'">Home</button>
-	<button onclick="alert('Try hovering over addresses to see what happens. Check spelling of emails. Notice the level of Urgency of the email sent. There are 4 phishing emails. Do not click any bad links! When you are phished, you will be notified.')">Level 1 Tips</button>
+	<button onclick="alert('Try hovering over addresses to see what happens. These phishing emails have a higher level of social engineering. So, the phishing techniques are slightly more advanced than Level 1. Do not click any bad links! When you are phished, you will be notified.')">Level 2 Tips</button>
 
     <div class="center-text">
 	<h1>Physicist Email</h1>
  <!-- Button to open modal -->
 <div class="button-container">
-<button onclick="showModal('myModal')">Professor X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Space X Students</button>
+<button onclick="showModal('myModal')">Career Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Space X Students Recruiting Event</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal2')">Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Symmetric Spaces Talk</button>
+<button onclick="showModal('myModal2')">Professor Moriarty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Putnum Exam Problem Solving Class</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal3')">The IRS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMPORTANT! Interest Fees on Your Late Tax Payment</button>
+<button onclick="showModal('myModal3')">IT Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IT Service Survey</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal4')">Freebies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Free Tooth Paste!</button>
+<button onclick="showModal('myModal4')">LinkedIn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You Received a Message</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal5')">Credit Card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your Payment is Late</button>
+<button onclick="showModal('myModal5')">Math Club&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meeting Tuesday</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal6')">Post&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Packag is Shipped</button>
+<button onclick="showModal('myModal6')">Physics Club&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reminder: Meeting on Thursday</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal7')">Peter Parker&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Class Notes Attached</button>
-</div>
-
-<div class="button-container">
-<button onclick="showModal('myModal8')">School Portal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Assignment Submission Confirmation</button>
-</div>
-
-<div class="button-container">
-<button onclick="showModal('myModal9')">Amazon Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suscpicious Acctivity on Your Account</button>
-</div>
-
-<div class="button-container">
-<button onclick="showModal('myModal10')">Career Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Job Fair Next Week</button>
+<button onclick="showModal('myModal7')">Professor Jackson&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Physics Jokes</button>
 </div>
 
 
@@ -149,14 +137,18 @@ body {
   <div class="modal-content">
     <div class="modal-header">
  
-      <h2>Space X Students</h2>
+      <h2>Space X Students Recruiting Event</h2>
     </div>
-    <p>To: <a href="mailto:student@schoolemail.com">student@schoolemail.com</a></p>
-    <p>From: <a href="mailto:professort@schoolemail.com">professort@schoolemail.com</a></p>
-    <p>Dear Class,</p>
-    <p>Class is cancelled this week due to oral exams. Please schedule with my assistant, Sarah, to take you exam during office hours.</p>
+    <p>To: <a href="mailto:professor@schoolemail.com">professor@schoolemail.com</a></p>
+    <p>From: <a href="mailto:careerservices@schoolemail.com">careerservices@schoolemail.com</a></p>
+    <p>Dear Physics Department,</p>
+    <p>Students from our school who worked for SpaceX will be answering questions at our event this afternoon. Professors, encourage your students to drop by between classes!</p>
+    <p>Date: Today </p>
+    <p>Time: 1 - 3 pm MDT </p>
+    <p>Location: Tiger Hall</p>
+    <p>Hope to see you there! </p>
     <p>Sincerely,</p>
-    <p>Professor T</p>
+    <p>Career Services</p>
     <button onclick="closeModal('myModal')">close</button>
   </div>
 </div>
@@ -166,51 +158,69 @@ body {
 <div id="myModal2" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-
-      <h2>Symmetric Spaces Talk</h2>
+      <h2>Putnum Exam Problem Solving Class</h2>
     </div>
-    <p>To: <a href="mailto:student@schoolemail.com">student@schoolemail.com</a></p>
+    <p>To: <a href="mailto:professor@schoolemail.com">professor@schoolemail.com</a></p>
     <p>From: <a href="mailto:professorm@schoolemail.com">professorm@schoolemail.com</a></p>
     <p>Dear All,</p>
-    <p>I am attending the Symmetric Spaces talk at the Universityof Warwick this Tuesday. If any of you would like to attend with me, please reply to this email.</p>
+    <p>I am teaching a course on problem solving this semester for the Putnum Exam. Please feel free to attempt the problems that we are working on.</p>
+    <p> <a href="http://www.professormoriarty.com/problemset1">www.professormoriarty.com/problemset1</a></p> <!-- Added 'http://' -->
+    <script>
+      // Wait for the DOM to be fully loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        // Find the anchor tag with ID 'theirs-link'
+        var link = document.querySelector('a[href="http://www.professormoriarty.com/problemset1"]'); // Added 'http://'
+
+        // Add click event listener to the anchor tag
+        link.addEventListener('click', function(event) {
+          // Prevent default behavior (opening the link)
+          event.preventDefault();
+          
+          // Redirect to Moriarty.html
+          window.location.href = 'Moriarty.html';
+        });
+      });
+    </script>
     <p>Sincerely,</p>
     <p>Professor Moriarty</p>
-   <button onclick="closeModal('myModal2')">close</button>
+    <button onclick="closeModal('myModal2')">close</button>
   </div>
 </div>
-
 <!-- Modal 3 -->
 <div id="myModal3" class="modal">
   <div class="modal-content">
     <div class="modal-header">
 
-      <h2>IMPORTANT! Interest Fees on Your Late Tax Payment</h2>
+      <h2>IT Service Survey</h2>
     </div>
-    <p>To: <a href="mailto:student@email.com">student@email.com</a></p>
-   <p>From: <a href="mailto:wewin@badguys.com">theirs@irs.gov</a></p>
+    <p>To: <a href="mailto:professor@schoolemail.com">professor@schoolemail.com</a></p>
+   <p>From: <a href="mailto:ITsupport@5choolemai1.com">ITsupport@schoolemail.com</a></p>
 
-    <p>Dear Citizen,</p>
-    <p>Youre late on your dues. Pay now! </p>
-    <p>Please click this link make a payment:</p>
-    <p> <a href="http://w_ww.BadGuys.com">www.theirs.com</a></p>
-	<script>
+    <p>Hello,</p>
+    <p>IT Support would like to know how our services have helped you this semester.</p>
+    <p>This is a campus-wide survey to see how we can improve our customer services.</p>
+    <p>Please fill out the following form:</p>
+    <p> <a href="http://www.5choolwebslte.com/campussurvey">www.schoolwebsite.com/campussurvey</a></p>
+
+
+<script>
   // Wait for the DOM to be fully loaded
   document.addEventListener('DOMContentLoaded', function() {
     // Find the anchor tag with ID 'theirs-link'
-    var link = document.querySelector('a[href="http://w_ww.BadGuys.com"]');
+    var link = document.querySelector('a[href="http://www.5choolwebslte.com/campussurvey"]');
 
     // Add click event listener to the anchor tag
     link.addEventListener('click', function(event) {
       // Prevent default behavior (opening the link)
       event.preventDefault();
       
-      // Redirect to 404.html
-      window.location.href = '404.html';
+      // Redirect to survey.html
+      window.location.href = 'survey.html';
     });
   });
 </script>
 
-
+    
     <button onclick="closeModal('myModal3')">close</button>
   </div>
 </div>
@@ -220,30 +230,15 @@ body {
   <div class="modal-content">
     <div class="modal-header">
 
-      <h2>Free Tooth Paste!</h2>
+      <h2>You Received a Message</h2>
     </div>
-    <p>To: <a href="mailto:student@schoolemail.com">student@schoolemail.com</a></p>
-    <p>From: <a href="mailto:info@freebies.com">info@freebies.com</a></p>
-    <p>Dear person,</p>
-    <p>words    words</p>
-    <p>please click this link:</p>
-       <p> <a href="http://www.BadGuys.com">www.freebies.com/toothpaste</a></p>
-	<script>
-  // Wait for the DOM to be fully loaded
-  document.addEventListener('DOMContentLoaded', function() {
-    // Find the anchor tag with ID 'theirs-link'
-    var link = document.querySelector('a[href="http://www.BadGuys.com"]');
+    <p>To: <a href="mailto:professor@schoolemail.com">professor@schoolemail.com</a></p>
+    <p>From: <a href="mailto:noreply@linkedin.com">noreply@linkedin.com</a></p>
+    <p>You got a message from Paul Jones!</p>
+    <p>Dear Professor, We went to school together and I thought we would connect! </p>
+    <p>Open your message:</p>
+       <p> <a href="http://www.linkedin.com/messages">www.linkedin.com/messages</a></p>
 
-    // Add click event listener to the anchor tag
-    link.addEventListener('click', function(event) {
-      // Prevent default behavior (opening the link)
-      event.preventDefault();
-      
-      // Redirect to 404.html
-      window.location.href = '404.html';
-    });
-  });
-</script>
     <button onclick="closeModal('myModal4')">close</button>
   </div>
 </div>
@@ -253,15 +248,16 @@ body {
   <div class="modal-content">
     <div class="modal-header">
 
-      <h2>Your Payment is Late</h2>
+      <h2>Meeting Tuesday</h2>
     </div>
-    <p>To: <a href="mailto:student@schoolemail.com">student@schoolemail.com</a></p>
-    <p>From: <a href="mailto:customerservice@creditcard.com">customerservice@creditcard.com</a></p>
-    <p>Dear Valued Customer,</p>
-    <p>This is a courtesy email to inform you that your credit card payment is late.</p>
-    <p>Please log into the portal to pay your bill.</p>
+   <p>To: <a href="mailto:professor@schoolemail.com">professor@schoolemail.com</a></p>
+    <p>From: <a href="mailto:mathclub@schoolemail.com">mathclub@schoolemail.com</a></p>
+    <p>Hey Math Club Members!</p>
+    <p>We will have our meeting this Tuesday at the Peterson Hall lounge.</p>
+    <p>I look forward to it!</p>
     <p>Sincerely,</p>
-    <p>The Credit Card Team</p>
+    <p>Ashley</p>
+    <p>Math Club President</p>
     <button onclick="closeModal('myModal5')">close</button>
   </div>
 </div>
@@ -270,115 +266,34 @@ body {
 <div id="myModal6" class="modal">
   <div class="modal-content" id="modalContent6">
     <div class="modal-header">
-      <h2>Post&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Package is Shipped</h2>
+      <h2>Reminder: Meeting on Thursday</h2>
     </div>
-    <p>To: <a href="mailto:student@schoolemail.com">student@schoolemail.com</a></p>
-    <p>From: <a href="mailto:badguys@darkweber.com">shipping@apple.com</a></p>
-    <p>Dear Random Person's Name,</p>
-    <p>Your package was shipped today.</p>
-    <p>Please click this link to track your package:</p>
-       <p> <a href="http://www.BaddGuys.com">www.shipping.com/tracking</a></p>
-	<script>
-  // Wait for the DOM to be fully loaded
-  document.addEventListener('DOMContentLoaded', function() {
-    // Find the anchor tag with ID 'theirs-link'
-    var link = document.querySelector('a[href="http://www.BaddGuys.com"]');
+    <p>To: <a href="mailto:professor@schoolemail.com">professor@schoolemail.com</a></p>
+    <p>From: <a href="mailto:physicsclub@schoolemail.com">physicsclub@schoolemail.com</a></p>
+    <p>Hi Pysics Club Members!</p>
+    <p>We will have our meeting this Thursday at the Johnson Hall lounge.</p>
+    <p>Bring a snack for the potluck.</p>
+    <p>Sincerely,</p>
+    <p>Jennie (club president)</p>
 
-    // Add click event listener to the anchor tag
-    link.addEventListener('click', function(event) {
-      // Prevent default behavior (opening the link)
-      event.preventDefault();
-      
-      // Redirect to 404.html
-      window.location.href = '404.html';
-    });
-  });
-</script>
-    <button onclick="closeModal('myModal4')">close</button>
+    <button onclick="closeModal('myModal6')">close</button>
   </div>
 </div>
+
 <!-- Modal 7 -->
 <div id="myModal7" class="modal">
   <div class="modal-content">
     <div class="modal-header">
 
-      <h2>Class Notes Attached</h2>
+      <h2>Physics Jokes</h2>
     </div>
-    <p>To: <a href="mailto:student@schoolemail.com">student@schoolemail.com</a></p>
+    <p>To: <a href="mailto:professor@schoolemail.com">professor@schoolemail.com</a></p>
     <p>From: <a href="mailto:peterp@schoolemail.com">peterp@schoolemail.com</a></p>
-    <p>Yo, find the class notes attached. Hope you feel better soon.</p>
+    <p>Hello Professor,</p>
+    <p>Here are the 2 jokes that you requested me to send your way...</p>
     <button onclick="closeModal('myModal7')">close</button>
   </div>
 </div>
-
-<!-- Modal 8 -->
-<div id="myModal8" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-
-  <h2>Assignment Submission Confirmation</h2>
-    </div>
-    <p>To: <a href="mailto:student@schoolemail.com">student@schoolemail.com</a></p>
-    <p>From: <a href="mailto:noreply@schoolemail.com">noreply@schoolemail.com</a></p>
-    <p>This email is to confirm that you assignment was submitted on March 1, 2023 at 12:01 pm for Criminal Justice 101.</p>
-    <button onclick="closeModal('myModal8')">close</button>
-  </div>
-</div>
-
-
-<!-- Modal 9 -->
-<div id="myModal9" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-
-      <h2>Suscpicious Acctivity on Your Account</h2>
-    </div>
-    <p>To: <a href="mailto:student@schoolemail.com">student@schoolemail.com</a></p>
-   <p>From: <a href="mailto:wewin@badguys.com">security@amazon.com</a></p>
-    <p>There was a log on to your account at 2:03 AM this morning. </p>
-    <p>Change your password immediately to prevent fraud on your account!</p>
-
-    <p> <a href="http://www.BadeGuys.com">www.amazon.com/security</a></p>
-	<script>
-  // Wait for the DOM to be fully loaded
-  document.addEventListener('DOMContentLoaded', function() {
-    // Find the anchor tag with ID 'theirs-link'
-    var link = document.querySelector('a[href="http://www.BadeGuys.com"]');
-
-    // Add click event listener to the anchor tag
-    link.addEventListener('click', function(event) {
-      // Prevent default behavior (opening the link)
-      event.preventDefault();
-      
-      // Redirect to 404.html
-      window.location.href = '404.html';
-    });
-  });
-</script>
-
-    <button onclick="closeModal('myModal9')">close</button>
-  </div>
-</div>
-
-
-<!-- Modal 10 -->
-<div id="myModal10" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-
-      <h2>Job Fair Next Week</h2>
-    </div>
-    <p>To: <a href="mailto:student@schoolemail.com">student@schoolemail.com</a></p>
-    <p>From: <a href="mailto:careerservices@email.com">careerservices@email.com</a></p>
-    <p>Dear Students,</p>
-    <p>There is an upcoming Job Fair this Wednesday being held in the Tiger School Lobby at 2pm.</p>
-    <p>Email me to get your resume reviewed today to get your dream job!</p>
-    <p>Sincerely,</p>
-    <p>Career Services</p>
-    <button onclick="closeModal('myModal10')">close</button>
-  </div>
-</div>
-
 
 
 
