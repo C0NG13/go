@@ -270,11 +270,11 @@ body {
 <div id="myModal6" class="modal">
   <div class="modal-content" id="modalContent6">
     <div class="modal-header">
-      <h2>Post&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Package is Shipped</h2>
+      <h2>Package is Shipped</h2>
     </div>
     <p>To: <a href="mailto:student@schoolemail.com">student@schoolemail.com</a></p>
     <p>From: <a href="mailto:badguys@darkweber.com">shipping@apple.com</a></p>
-    <p>Dear Random Person's Name,</p>
+    <p>Dear Random Person,</p>
     <p>Your package was shipped today.</p>
     <p>Please click this link to track your package:</p>
        <p> <a href="http://www.BaddGuys.com">www.shipping.com/tracking</a></p>
@@ -294,7 +294,7 @@ body {
     });
   });
 </script>
-    <button onclick="closeModal('myModal4')">close</button>
+    <button onclick="closeModal('myModal6')">close</button>
   </div>
 </div>
 <!-- Modal 7 -->
