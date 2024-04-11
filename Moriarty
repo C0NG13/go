@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moriarty</title>
+    <style>
+        .center-text {
+            text-align: center;
+        }
+        /* Reduce spacing between lines */
+        .line {
+            display: block;
+        }
+
+
+    /* Style for the pop-up */
+    #popup {
+        display: none; /* Hide the pop-up by default */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+   /* Style for the buttons */
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            align-items: left; /* Lefts buttons horizontally */
+
+            margin-left: 0in; /* Set left margin to 2 inches */
+
+
+            margin-top: 20px;
+        }
+        
+        .button-container button {
+    margin: 5px 5in 5px 5in; /* Top, right, bottom, left margins */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00008B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: left; /* Left justify the text */
+}
+
+
+        .button-container button:hover {
+            background-color: #228B22;
+        }
+
+        /* Style for the modal */
+        
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+  background-color: #3498db;
+  color: white;
+  padding: 8px; /* thinner header band */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: calc(80% + 4in); /* make box wider by 4 inches */
+  max-width: calc(480px + 4in); /* maximum width with additional 4 inches */
+  border-radius: 5px;
+}
+
+.close {
+  color: red;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: darkred;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+</style>
+<script>
+    // Function to show the pop-up
+    function showPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    // Function to be executed after the delay
+    function delayedPopup() {
+        setTimeout(showPopup, 3000); // 3000 milliseconds = 3 seconds
+    }
+
+    // Call the delayedPopup function when the page is loaded
+    window.onload = delayedPopup;
+</script>
+</head>
+<body>
+
+<!-- Pop-up content -->
+<div id="popup">
+   <div class="center-text">
+     <h2>Gotcha!</h2>
+       <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;____</span>
+       <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(_____)</span>
+       <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( ! ( !</span>
+        <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) ! ) !</span>
+	<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( ! ( !</span>
+ 	<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!</span>
+ 	<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!</span>
+        <span class="line">><(((º></span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="line">Yes, phishing can happen by people you know whether it be because they were hacked or because they can code their own webpages.</span>
+<span class="line">The main way to avoid attacks like this is to not open emails that you did not expect to receive.</span>
+<span class="line">In real life, you would not be notified.</span>
+ </div>
+
+</div>
+
+	
+    
+    
+        <h2>Problem Sets</h2>
+	<div class="button-container">
+	<button onclick="showModal('myModal1')">Problem Set 1</button>
+	</div>
+
+	<div class="button-container">
+	<button onclick="showModal('myModal2')">Problem Set 2 - Will Be Posted Soon</button>
+	</div>
+
+<!-- Modal 1 -->
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+
+      <h2>Problem Set 1</h2>
+    </div>
+
+    <p>Problem 1. </p>
+    <p>Problem 2.</p>
+    <p>Problem 3.</p>
+    
+    <button onclick="closeModal('myModal1')">close</button>
+  </div>
+</div>
+
+
+
+<script>
+// Function to display the modal
+function showModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = "none";
+}
+</script>
+
+     
+</body>
+</html>
