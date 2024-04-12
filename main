@@ -21,7 +21,8 @@
 		<button onclick="window.location.href='student.html'">Student</button>
       		<button onclick="window.location.href='lawyer.html'">Physicist</button>  
 		<button onclick="window.location.href='physicist.html'">Senator</button>
-      		<button onclick="window.location.href='senator.html'">Director of NASA</button>  	
+      		<button onclick="window.location.href='senator.html'">Director of NASA</button>  
+		<button onclick="window.location.href='search.html'">Search Engine Navigation</button>  	
 
     </div>
 </body>
