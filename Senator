@@ -139,27 +139,27 @@ body {
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal2')">Fox News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request for Comment Regarding NSA Leak</button>
+<button onclick="showModal('myModal2')">Fox News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request for Comment Regarding NSA Leak</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal3')">NBC News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interview Request</button>
+<button onclick="showModal('myModal3')">NBC News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interview Request</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal4')">Food Caterer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fundraiser Banquet Receipt</button>
+<button onclick="showModal('myModal4')">Food Caterer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fundraiser Banquet Receipt</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal5')">Peter Johnson&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scheduling Trip to D.C.</button>
+<button onclick="showModal('myModal5')">Peter Johnson&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scheduling Trip to D.C.</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal6')">Senator Watson Club&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Appropriations Committee Notes</button>
+<button onclick="showModal('myModal6')">Senator Watson Club&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Appropriations Committee Notes</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal7')">Vocational Association&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Policymaker of the Year Award</button>
+<button onclick="showModal('myModal7')">Vocational Association&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Policymaker of the Year Award</button>
 </div>
 
 
@@ -192,7 +192,7 @@ body {
     <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
     <p>From: <a href="mailto:reportera@foxnews.com">reportera@foxnews.com</a></p>
     <p>Dear Senator,</p>
-    <p>We recently became aware, due to a security breach of an NSA contractor, that the NSA can now hack computer that are turned off and unplugged! This invasion of privacy is very upsetting to the American people. May your office please respond with a comment for our story which will be breaking in 20 minutes?</p>
+    <p>We recently became aware, due to a security breach of an NSA contractor, that the NSA can now hack computers that are turned off and unplugged! This invasion of privacy is very upsetting to the American people. May your office please respond with a comment for our story which will be breaking in 20 minutes?</p>
     <p>Sincerely,</p>
     <p>Adam A.</p>
     <p>Fox News Reporter</p>
@@ -228,27 +228,28 @@ body {
     </div>
     <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
     <p>From: <a href="mailto:noreply@carererXYZ.com">noreply@carererXYZ.com</a></p>
-    <p>You got a message from Paul Jones!</p>
+
     <p>Dear Senator, </p>
     <p>Please see the receipt that you requested attached.</p>
     <p>Your business is always appreciated.</p>
     <p>Thank you for working with us!</p>
     <p>XYZ Catering Team</p>
-    <p>(Attached Receipt)</p>
+    <p>--Attached Receipt--</p>
     <button class="button" onclick="closeModalAndShowPopup()">Close</button>
   </div>
 </div>
-
 <!-- Message popup -->
 <div id="popup" class="popup">
-  <h2>Message Popup</h2>
-  <p>This is a message popup that appears along with the ripple effect.</p>
+  <p> </p>
+  <h2> Gotcha! </h2>
+  <p>Your vendor was compromised, now so are you. </p>
+  <p> If you are unable to continue the game, simply refresh. </p>
 </div>
 
 <script>
 function closeModalAndShowPopup() {
   // Close modal
-  closeModal('myModal4');
+  closeModal('myModal7');
   
   // Trigger ripple effect
   triggerRipple();
@@ -288,6 +289,8 @@ function triggerRipple() {
   });
 }
 </script>
+
+
 
 
 <!-- Modal 5 -->
@@ -345,8 +348,10 @@ function triggerRipple() {
 
 <!-- Message popup -->
 <div id="popup" class="popup">
-  <h2>Message Popup</h2>
-  <p>This is a message popup that appears along with the ripple effect.</p>
+  <p> </p>
+  <h2> Gotcha! </h2>
+  <p>Your vendor was compromised, now so are you. </p>
+  <p> If you are unable to continue the game, simply refresh. </p>
 </div>
 
 <script>
