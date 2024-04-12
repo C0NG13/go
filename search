@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 5</title>
+    <style>
+        .center-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+		<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, do not open it. If an email is safe, open it. Click links that you think are safe. When you have completed checking the email inbox, click the HOME button.')">Directions</button>
+	<button onclick="window.location.href='main.html'">Home</button>
+	<button onclick="alert('These phishing emails have the highest level of social engineering. Don't open emails that you suspect to have nefarious goals. When you are phished, you will be notified.')">Level 5 Tips</button>
+    <div class="center-text">
+        <h2>Search Engine</h2>
+        <h3>There is at least 1 search engine phished link on this page. Can you avoid it?</h3>
+        <h5> </h5>
+		<button onclick="window.location.href='123.html'">Make search engine here</button>
+
+
+    </div>
+</body>
+</html>
