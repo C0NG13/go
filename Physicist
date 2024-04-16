@@ -132,6 +132,11 @@ body {
 </div>
 
 
+<div class="button-container">
+<button onclick="showModal('myModal8')">Professor Danijel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elliptic Curves and Applications Seminar</button>
+</div>
+
+
 <!-- Modal 1 -->
 <div id="myModal" class="modal">
   <div class="modal-content">
@@ -194,20 +199,20 @@ body {
       <h2>IT Service Survey</h2>
     </div>
     <p>To: <a href="mailto:professor@schoolemail.com">professor@schoolemail.com</a></p>
-   <p>From: <a href="mailto:ITsupport@5choolemai1.com">ITsupport@schoolemail.com</a></p>
+   <p>From: <a href="mailto:ITsupport@Schoolemai1.com">ITsupport@schoolemail.com</a></p>
 
     <p>Hello,</p>
     <p>IT Support would like to know how our services have helped you this semester.</p>
     <p>This is a campus-wide survey to see how we can improve our customer services.</p>
     <p>Please fill out the following form:</p>
-    <p> <a href="http://www.5choolwebslte.com/campussurvey">www.schoolwebsite.com/campussurvey</a></p>
+    <p> <a href="http://www.Schoo1website.com/campussurvey">www.schoolwebsite.com/campussurvey</a></p>
 
 
 <script>
   // Wait for the DOM to be fully loaded
   document.addEventListener('DOMContentLoaded', function() {
     // Find the anchor tag with ID 'theirs-link'
-    var link = document.querySelector('a[href="http://www.5choolwebslte.com/campussurvey"]');
+    var link = document.querySelector('a[href="http://www.Schoo1website.com/campussurvey"]');
 
     // Add click event listener to the anchor tag
     link.addEventListener('click', function(event) {
@@ -270,7 +275,7 @@ body {
     </div>
     <p>To: <a href="mailto:professor@schoolemail.com">professor@schoolemail.com</a></p>
     <p>From: <a href="mailto:physicsclub@schoolemail.com">physicsclub@schoolemail.com</a></p>
-    <p>Hi Pysics Club Members!</p>
+    <p>Hi Physics Club Members!</p>
     <p>We will have our meeting this Thursday at the Johnson Hall lounge.</p>
     <p>Bring a snack for the potluck.</p>
     <p>Sincerely,</p>
@@ -291,11 +296,29 @@ body {
     <p>From: <a href="mailto:peterp@schoolemail.com">peterp@schoolemail.com</a></p>
     <p>Hello Professor,</p>
     <p>Here are the 2 jokes that you requested me to send your way...</p>
+	<p>Joke 1:</p>
+	<p>Joke 2:</p>
     <button onclick="closeModal('myModal7')">close</button>
   </div>
 </div>
 
+<!-- Modal 8 -->
+<div id="myModal8" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
 
+      <h2> Elliptic Curves and Applications Seminar</h2>
+    </div>
+    <p>To: <a href="mailto:professor@schoolemail.com">professor@schoolemail.com</a></p>
+    <p>From: <a href="mailto:professord@schoolemail.co">mailto:professord@schoolemail.co</a></p>
+    <p>Hello All,</p>
+    <p>This week we will be reviewing a few complex applications of elliptical curves.</p>
+	<p>Our speaker will be William, who is a 2nd year student.</p>
+	<p>Sincerely, </p>
+	<p>Professor Danijel</p>
+    <button onclick="closeModal('myModal8')">close</button>
+  </div>
+</div>
 
 
 <script>
