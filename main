@@ -11,7 +11,15 @@
     </style>
 </head>
 <body>
-	<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, do not open it. If an email is safe, open it. When you have completed checking the email inbox, click the HOME button.')">Directions</button>
+	    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 	
     <div class="center-text">
         <h2>goPhish!</h2>
@@ -19,10 +27,10 @@
         <h4>Please select your player.</h4>
         <h5> </h5>
 		<button onclick="window.location.href='student.html'">Student</button>
-      		<button onclick="window.location.href='lawyer.html'">Physicist</button>  
-		<button onclick="window.location.href='physicist.html'">Senator</button>
-      		<button onclick="window.location.href='senator.html'">Director of NASA</button>  
-		<button onclick="window.location.href='search.html'">Search Engine Navigation</button>  	
+      		<button onclick="window.location.href='physicist.html'">Physicist</button>  
+		<button onclick="window.location.href='senator.html'">Senator</button>
+      		<button onclick="window.location.href='NASA.html'">Director of NASA</button>  
+		<button onclick="window.location.href='search.html'">Search Engine Navigation - Not Done Yet </button> 
 
     </div>
 </body>
