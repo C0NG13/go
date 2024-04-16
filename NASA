@@ -129,38 +129,36 @@ body {
 <body>
 	<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, do not open it. If an email is safe, open it. Click links that you think are safe. When you have completed checking the email inbox, click the HOME button.')">Directions</button>
 	<button onclick="window.location.href='main.html'">Home</button>
-	<button onclick="alert('These phishing emails have the highest level of social engineering. Don't open emails that you suspect to have nefarious goals. When you are phished, you will be notified.')">Level 4 Tips</button>
+<button onclick="alert('These phishing emails have the highest level of social engineering. Don\'t open emails that you suspect to have nefarious goals. When you are phished, you will be notified.')">Level 4 Tips</button>
 
+		<button onclick="alert('While most emails will let you hover over the address prior to opening the email, I was unable to program that into this game. You will have that assistance in real life, yet not for this game unfortunately.')">Disclaimer</button>
     <div class="center-text">
-	<h1>Senator Email</h1>
+	<h1>NASA Director Email</h1>
  <!-- Button to open modal -->
 <div class="button-container">
-<button onclick="showModal('myModal')">James Van Allen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moon Landing Footage</button>
+<button onclick="showModal('myModal')">James Johnson &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moon Landing Exhibit Addition</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal2')">LinkedIn &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You Received a Message!</button>
+<button onclick="showModal('myModal2')">LinkedIn &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You Received a Message!</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal3')">NBC News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Footage of Your Party Last Week</button>
+<button onclick="showModal('myModal3')">NBC News &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Footage of the Event Last Week</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal4')">NASA Web Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do an injection attack on this email</button>
+<button onclick="showModal('myModal4')">NASA Web Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vacation Email Response: Director</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal5')">IT Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Authentication Proceedure Beginning April 1st</button>
+<button onclick="showModal('myModal5')">IT Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two-Factor Authentication Policy Change Beginning April 1st</button>
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal6')">Someone Else that the director would work with&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clone Phishing</button>
+<button onclick="showModal('myModal6')">James Van Allen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Re: Call Me</button>
 </div>
 
-<div class="button-container">
-<button onclick="showModal('myModal7')">Safe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Safe Safe</button>
-</div>
 
 
 <!-- Modal 1 -->
@@ -168,16 +166,16 @@ body {
   <div class="modal-content">
     <div class="modal-header">
  
-      <h2>Privacy Committee Hearing Reminder</h2>
+      <h2>Moon Landing Exhibit Addition</h2>
     </div>
-    <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
-    <p>From: <a href="mailto:senatorsmith@senatatoremail.gov">senatorsmith@senatatoremail.gov</a></p>
-    <p>Dear Privacy Committee Members,</p>
-    <p>This is a reminder that we have an emergency committee meeting today.</p>
+    <p>To: <a href="mailto:director@nasa.gov">director@nasa.gov</a></p>
+    <p>From: <a href="mailto:jamesj@nasa.gov">jamesj@nasa.gov</a></p>
+    <p>Dear All,</p>
+    <p>Today marks the anniversary of the moon landing. To commemorate this moment, we now move a piece of history into this exhibit that we have had in storage since that day. The LTX-71 concealable mike will now be displayed openly for the public to see the mike that broadcasted the words, "That's one small step for man, one giant leap for mankind."</p>
 
-    <p>Sincerely,</p>
-    <p>Senator B. Smith</p>
-    <p>Committee Chair</p>
+    <p>Making small steps,</p>
+    <p>James Johnson</p>
+    <p> </p>
     <button onclick="closeModal('myModal')">close</button>
   </div>
 </div>
@@ -187,15 +185,15 @@ body {
 <div id="myModal2" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <h2>Request for Comment Regarding NSA Leak</h2>
+      <h2>You Received a Message!</h2>
     </div>
-    <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
-    <p>From: <a href="mailto:reportera@foxnews.com">reportera@foxnews.com</a></p>
-    <p>Dear Senator,</p>
-    <p>We recently became aware, due to a security breach of an NSA contractor, that the NSA can now hack computer that are turned off and unplugged! This invasion of privacy is very upsetting to the American people. May your office please respond with a comment for our story which will be breaking in 20 minutes?</p>
-    <p>Sincerely,</p>
-    <p>Adam A.</p>
-    <p>Fox News Reporter</p>
+    <p>To: <a href="mailto:director@nasa.gov">director@nasa.gov</a></p>
+    <p>From: <a href="mailto:noreply@linkedin.com">noreply@linkedin.com</a></p>
+    <p>You got a message from Paul Smith!</p>
+    <p>Dear Director, We went to school together and I thought we would connect! Can I treat you to lunch? I would love to learn more about what you have been up to.</p>
+    <p>Open your message:</p>
+       <p> <a href="http://www.linkedin.com/messages">www.linkedin.com/messages</a></p>
+
     <button onclick="closeModal('myModal2')">close</button>
   </div>
 </div>
@@ -204,17 +202,29 @@ body {
 <div id="myModal3" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-
-      <h2>Interview Request</h2>
+      <h2>Footage of the Event Last Week</h2>
     </div>
-    <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
-   <p>From: <a href="mailto:reporterb@NBC.com">reporterb@NBC.com</a></p>
+    <p>To: <a href="mailto:director@nasa.gov">director@nasa.gov</a></p>
+    <p>From: <a href="mailto:wewinagain@badguys.com">reporterb@NBC.com</a></p>
 
-    <p>Dear Senator,</p>
-    <p>Due to the rising concern of privacy in our nation, we wanted to invite you onto our program at your conviencence. To discuss a interview time, please reach out.</p>
-    <p>Sincerely,</p>
-    <p>Brockett B.</p>
-    <p>NBC News Reporter</p>    
+    <!-- Centered text and ASCII art -->
+    <div class="center-text">
+      <h2>Gotcha!</h2>
+      <span class="line">><(((º>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+      <span class="line"> &nbsp;___</span><br>
+      <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)____&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+      <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \\&nbsp;&nbsp;/|</span><br>
+      <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(__º  ))) v |</span><br>
+      <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(___V_/\|</span><br>
+      <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</span><br>
+
+      <br>
+      <br>
+      <br>
+      <p>Click the close button to return to the game.</p>
+    </div>  
+
+    <!-- Close button -->
     <button onclick="closeModal('myModal3')">close</button>
   </div>
 </div>
@@ -224,70 +234,24 @@ body {
 <div id="myModal4" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <h2>Fundraiser Banquet Receipt</h2>
+      <h2>Vacation Email Response: Director</h2>
     </div>
-    <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
-    <p>From: <a href="mailto:noreply@carererXYZ.com">noreply@carererXYZ.com</a></p>
-    <p>You got a message from Paul Jones!</p>
-    <p>Dear Senator, </p>
-    <p>Please see the receipt that you requested attached.</p>
-    <p>Your business is always appreciated.</p>
-    <p>Thank you for working with us!</p>
-    <p>XYZ Catering Team</p>
-    <p>(Attached Receipt)</p>
-    <button class="button" onclick="closeModalAndShowPopup()">Close</button>
+    <p>To: <a href="mailto:director@nasa.gov">director@nasa.gov</a></p>
+    <p>From: <a href="mailto:webdesig@nasa.gov">webdesign@nasa.gov</a></p>
+    <p></p>   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="button" onclick="window.location.href = 'terabyte.html';">Close</button>
   </div>
 </div>
 
-<!-- Message popup -->
-<div id="popup" class="popup">
-  <h2>Message Popup</h2>
-  <p>This is a message popup that appears along with the ripple effect.</p>
-</div>
-
-<script>
-function closeModalAndShowPopup() {
-  // Close modal
-  closeModal('myModal4');
-  
-  // Trigger ripple effect
-  triggerRipple();
-  
-  // Show message popup
-  const popup = document.getElementById('popup');
-  popup.style.display = 'block';
-  
-  // Hide popup after 2 seconds
-  setTimeout(() => {
-    popup.style.display = 'none';
-  }, 2000);
-}
-
-function triggerRipple() {
-  // Create ripple element
-  const ripple = document.createElement('span');
-  ripple.classList.add('ripple');
-  
-  // Calculate ripple size and position
-  const diameter = Math.max(document.documentElement.clientWidth, document.documentElement.clientHeight);
-  const radius = diameter / 2;
-  const xPos = radius;
-  const yPos = radius;
-  
-  // Set ripple size and position
-  ripple.style.width = ripple.style.height = `${diameter}px`;
-  ripple.style.left = `${xPos}px`;
-  ripple.style.top = `${yPos}px`;
-  
-  // Add ripple to container
-  document.body.appendChild(ripple);
-  
-  // Remove ripple after animation ends
-  ripple.addEventListener('animationend', () => {
-    ripple.remove();
-  });
-}
-</script>
 
 
 <!-- Modal 5 -->
@@ -295,15 +259,33 @@ function triggerRipple() {
   <div class="modal-content">
     <div class="modal-header">
 
-      <h2>Scheduling Trip to D.C.</h2>
+      <h2>Two-Factor Authentication Policy Change Beginning April 1st</h2>
     </div>
-    <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
-    <p>From: <a href="mailto:peterj1234@email.com">peterj1234@email.com</a></p>
-    <p>Dear Senator,</p>
-    <p>Thank you for approving our trip to visit DC! </p>
-    <p>My family can barely wait to tour the capital.</p>
-    <p>Sincerely,</p>
-    <p>Peter J.</p>
+    <p>To: <a href="mailto:director@nasa.gov">director@nasa.gov</a></p>
+    <p>From: <a href="mailto:IT@NASA.G0V">IT@NASA.GOV</a></p>
+    <p>Hello,</p>
+    <p>This email is to inform you all that starting April 1, 2025 all NASA accounts will change authentication services. The change in security vendors from RSA SecurID Tokens to AES SecurID Tokens is due to an update recently developed by NASA Advanced Supercomputing (NAS) Division. While the change in services will occur in 2 months, we encourage users to switch over at the earliest convienence. You may go to this link for more <a href="http://www.nas.nasa.go/hecc/accounts/getaccounts.html">information</a>.</p>
+	<script>
+  // Wait for the DOM to be fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find the anchor tag with ID 'theirs-link'
+    var link = document.querySelector('a[href="http://www.nas.nasa.go/hecc/accounts/getaccounts.html"]');
+
+    // Add click event listener to the anchor tag
+    link.addEventListener('click', function(event) {
+      // Prevent default behavior (opening the link)
+      event.preventDefault();
+      
+      // Redirect to 404.html
+      window.location.href = '404.html';
+    });
+  });
+</script>
+	<p>Sincerely,</p>
+    <p>NAS</p>
+	
+	
+	
     <button onclick="closeModal('myModal5')">close</button>
   </div>
 </div>
@@ -312,36 +294,24 @@ function triggerRipple() {
 <div id="myModal6" class="modal">
   <div class="modal-content" id="modalContent6">
     <div class="modal-header">
-      <h2>Appropriations Committee Notes</h2>
+      <h2>Re: Call Me</h2>
     </div>
-    <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
-    <p>From: <a href="mailto:watsonp@senatatoremail.gov">watsonp@schoolemail.com</a></p>
-    <p>Hello Appropriations Committee,</p>
-    <p>You can now find the committee notes posted on the secured portal.</p>
+    <p>To: <a href="mailto:director@nasa.gov">director@nasa.gov</a></p>
+    <p>From: <a href="mailto:jamesa@nasa.gov">jamesa@nasa.gov</a></p>
+    <p>Hey,</p>
+    <p>I just saw your email. Can you call me to discuss the matter? 904-405-2553</p>
     <p>Sincerely,</p>
-    <p>Senator Watson</p>
+    <p>James</p>
+	
+	    <br>
+    <br>
+    <br>
 
-    <button onclick="closeModal('myModal6')">close</button>
+   <button class="button" onclick="window.location.href = 'terabyte.html';">Close</button>
   </div>
 </div>
 
-<!-- Modal 7 -->
-<div id="myModal7" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>Policymaker of the Year Award</h2>
-    </div>
-    <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
-    <p>From: <a href="mailto:president@vocationalassoc.com">president@vocationalassoc.com</a></p>
-    <p>Congratulations Senator!</p>
-    <p>You were nominated for Policymaker of the Year Award and won 3 years in a row!!!</p>
-    <p>We are honored to give such a hardworking statesman this recognition.</p>
-    <p>Sincerely,</p>
-    <p>President P.</p>
-    <p>Vocational Association</p>
-    <button class="button" onclick="closeModalAndShowPopup()">Close</button>
-  </div>
-</div>
+
 
 <!-- Message popup -->
 <div id="popup" class="popup">
