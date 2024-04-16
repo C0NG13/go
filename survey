@@ -137,9 +137,14 @@ button:hover {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!<br>
 ><(((º><br>
-<p>Yes, phishing can happen by people you know whether they were hacked or can code their own webpages. The main way to avoid attacks like this is to not open unexpected emails. In this case IT's email got spoofed. In real life, you wouldn't be notified.</p>
+
 
 </div>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Click the back button to return to the game.</p>
 
 <script>
 // Remove spaces between lines
@@ -149,5 +154,3 @@ popupText.innerHTML = popupText.innerHTML.replace(/(&nbsp;)+\n(&nbsp;)+/g, '\n')
 
 </body>
 </html>
-
-
