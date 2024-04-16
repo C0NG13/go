@@ -125,15 +125,47 @@ body {
 }
 
 
+/* Allow for the hover textbox feature*/
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    /* Position the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.popup p {
+  margin-top: 10px; /* Adjust as needed */
+}
+
     </style></head>
 <body>
-	<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, do not open it. If an email is safe, open it. Click links that you think are safe. When you have completed checking the email inbox, click the HOME button.')">Directions</button>
+<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, do not open it. If an email is safe, open it. When you have completed checking the email inbox, click the HOME button.')">Directions</button>
 	<button onclick="window.location.href='main.html'">Home</button>
-	<button onclick="alert('These phishing emails have a higher level of social engineering than Level 1 or 3. So, the phishing techniques are advanced. Do not click any bad links! Definately don't open emails that you suspect to have nafarious goals. When you are phished, you will be notified.')">Level 3 Tips</button>
-
+    <button onclick="alert('The bad guys have upped their game in this level!')">Level 3 Tips</button>
+	<button onclick="alert('While most emails will let you hover over the address prior to opening the email, I was unable to program that into this game. You will have that assistance in real life, yet not for this game unfortunately.')">Disclaimer</button>
     <div class="center-text">
+
 	<h1>Senator Email</h1>
  <!-- Button to open modal -->
+
 <div class="button-container">
 <button onclick="showModal('myModal')">Senator Smith&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Committee Hearing Reminder</button>
 </div>
@@ -147,7 +179,7 @@ body {
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal4')">Food Caterer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fundraiser Banquet Receipt</button>
+<button onclick="showModal('myModal4')">Vocational Association&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Policymaker of the Year Award </button>
 </div>
 
 <div class="button-container">
@@ -159,7 +191,7 @@ body {
 </div>
 
 <div class="button-container">
-<button onclick="showModal('myModal7')">Vocational Association&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Policymaker of the Year Award</button>
+<button onclick="showModal('myModal7')">Food Caterer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fundraiser Banquet Receipt</button>
 </div>
 
 
@@ -192,7 +224,7 @@ body {
     <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
     <p>From: <a href="mailto:reportera@foxnews.com">reportera@foxnews.com</a></p>
     <p>Dear Senator,</p>
-    <p>We recently became aware, due to a security breach of an NSA contractor, that the NSA can now hack computers that are turned off and unplugged! This invasion of privacy is very upsetting to the American people. May your office please respond with a comment for our story which will be breaking in 20 minutes?</p>
+    <p>We recently became aware, due to a security breach of an NSA contractor, Bino-Theo Tech, that the NSA can now remotely hack computers that are turned off and unplugged! This invasion of privacy is very unsettling. May your office please respond with a comment for our story which will be breaking in 20 minutes?</p>
     <p>Sincerely,</p>
     <p>Adam A.</p>
     <p>Fox News Reporter</p>
@@ -224,32 +256,51 @@ body {
 <div id="myModal4" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <h2>Fundraiser Banquet Receipt</h2>
+      <h2>Policymaker of the Year Award</h2>
     </div>
     <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
-    <p>From: <a href="mailto:noreply@carererXYZ.com">noreply@carererXYZ.com</a></p>
-
-    <p>Dear Senator, </p>
-    <p>Please see the receipt that you requested attached.</p>
-    <p>Your business is always appreciated.</p>
-    <p>Thank you for working with us!</p>
-    <p>XYZ Catering Team</p>
-    <p>--Attached Receipt--</p>
+    <p>From: <a href="mailto:president@vocationalassoc.com">president@vocationalassoc.com</a></p>
+    <p>Congratulations Senator!</p>
+    <p>You were nominated for Policymaker of the Year Award and won 3 years in a row!!!</p>
+    <p>We are honored to give such a hardworking statesman this recognition.</p>
+    <p>Sincerely,</p>
+    <p>President P.</p>
+    <p>Vocational Association</p>
+    <p>--Attached Certificate--</p>
     <button class="button" onclick="closeModalAndShowPopup()">Close</button>
   </div>
 </div>
+
+
+
+
 <!-- Message popup -->
-<div id="popup" class="popup">
-  <p> </p>
-  <h2> Gotcha! </h2>
-  <p>Your vendor was compromised, now so are you. </p>
-  <p> If you are unable to continue the game, simply refresh. </p>
+<div id="popup" class="popup center-text">
+  <p>
+    <br>
+
+	<h2>Gotcha!</h2>
+    <p>Your vendor was compromised, now so are you. </p>
+    <p> The malware activated once you opened the email. </p>
+	    <br>
+    <br>
+    <span class="line">><(((º></span><br>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \^/</span><br>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<(v)></span><br>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/v\</span><br>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span><br>      
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span><br>
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span><br>      
+    <span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span><br>
+    <br>
+
+
 </div>
 
 <script>
 function closeModalAndShowPopup() {
   // Close modal
-  closeModal('myModal7');
+  closeModal('myModal4');
   
   // Trigger ripple effect
   triggerRipple();
@@ -261,7 +312,7 @@ function closeModalAndShowPopup() {
   // Hide popup after 2 seconds
   setTimeout(() => {
     popup.style.display = 'none';
-  }, 2000);
+  }, 5000);
 }
 
 function triggerRipple() {
@@ -332,71 +383,20 @@ function triggerRipple() {
 <div id="myModal7" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <h2>Policymaker of the Year Award</h2>
+      <h2>Fundraiser Banquet Receipt</h2>
     </div>
     <p>To: <a href="mailto:senator@senatatoremail.gov">senator@senatatoremail.gov</a></p>
-    <p>From: <a href="mailto:president@vocationalassoc.com">president@vocationalassoc.com</a></p>
-    <p>Congratulations Senator!</p>
-    <p>You were nominated for Policymaker of the Year Award and won 3 years in a row!!!</p>
-    <p>We are honored to give such a hardworking statesman this recognition.</p>
+    <p>From: <a href="mailto:customerservice@caterer.com">customerservicet@caterer.com</a></p>
+    <p>Thank you for your business Senator!</p>
+    <p>Please find the reciept attached for your recent banquet.</p>
+    <p>We are honored to provide you with our services for 3 years.</p>
     <p>Sincerely,</p>
-    <p>President P.</p>
-    <p>Vocational Association</p>
-    <button class="button" onclick="closeModalAndShowPopup()">Close</button>
+    <p>The Catering Team</p>
+    <p>--Attached Receipt--</p>
+     <button onclick="closeModal('myModal7')">close</button>
   </div>
 </div>
 
-<!-- Message popup -->
-<div id="popup" class="popup">
-  <p> </p>
-  <h2> Gotcha! </h2>
-  <p>Your vendor was compromised, now so are you. </p>
-  <p> If you are unable to continue the game, simply refresh. </p>
-</div>
-
-<script>
-function closeModalAndShowPopup() {
-  // Close modal
-  closeModal('myModal7');
-  
-  // Trigger ripple effect
-  triggerRipple();
-  
-  // Show message popup
-  const popup = document.getElementById('popup');
-  popup.style.display = 'block';
-  
-  // Hide popup after 2 seconds
-  setTimeout(() => {
-    popup.style.display = 'none';
-  }, 2000);
-}
-
-function triggerRipple() {
-  // Create ripple element
-  const ripple = document.createElement('span');
-  ripple.classList.add('ripple');
-  
-  // Calculate ripple size and position
-  const diameter = Math.max(document.documentElement.clientWidth, document.documentElement.clientHeight);
-  const radius = diameter / 2;
-  const xPos = radius;
-  const yPos = radius;
-  
-  // Set ripple size and position
-  ripple.style.width = ripple.style.height = `${diameter}px`;
-  ripple.style.left = `${xPos}px`;
-  ripple.style.top = `${yPos}px`;
-  
-  // Add ripple to container
-  document.body.appendChild(ripple);
-  
-  // Remove ripple after animation ends
-  ripple.addEventListener('animationend', () => {
-    ripple.remove();
-  });
-}
-</script>
 
 
 
