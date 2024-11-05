@@ -8,35 +8,49 @@
         body {
             background-color: #ADD8E6; /* Light blue background color */
             font-family: Arial, sans-serif; /* Optional: sets a clean, readable font */
+            overflow: hidden; /* Ensures the fish doesn't overflow the page */
         }
         
         .center-text {
             text-align: center;
+            z-index: 10;
+            position: relative;
+        }
+
+        /* Add a class for the animated clownfish */
+        .swimming-fish {
+            position: absolute;
+            top: 50%; /* Position vertically centered */
+            right: -150px; /* Start off the right edge of the page */
+            animation: swimLeft 10s linear infinite; /* 10s duration, infinite loop */
+        }
+
+        /* Define the animation to move the fish from right to left */
+        @keyframes swimLeft {
+            0% {
+                right: -150px; /* Starts far off the right edge */
+            }
+            100% {
+                right: 100%; /* Ends off the left edge of the page */
+            }
         }
     </style>
 </head>
 <body>
-	    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-	
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- Swimming fish image -->
+    <img src="images/clownfish-swimming.gif" alt="Clownfish Swimming" class="swimming-fish">
+    
     <div class="center-text">
         <h2>goPh!sh</h2>
         <h3>Do you have what it takes to not get phished?</h3>
         <h4>Please select your player.</h4>
         <h5> </h5>
-		<button onclick="window.location.href='student.html'">Student</button>
-      		<button onclick="window.location.href='Physicist.html'">Physicist</button>  
-		<button onclick="window.location.href='Senator.html'">Senator</button>
-      		<button onclick="window.location.href='NASA.html'">Director of NASA</button>  
-		 
-
+        <button onclick="window.location.href='student.html'">Student</button>
+        <button onclick="window.location.href='Physicist.html'">Physicist</button>  
+        <button onclick="window.location.href='Senator.html'">Senator</button>
+        <button onclick="window.location.href='NASA.html'">Director of NASA</button>  
     </div>
 </body>
 </html>
