@@ -97,7 +97,7 @@ body {
     </style></head>
 <body>
 	<button onclick="alert('The goal of this game is to not get phished. If you think an email is spam, do not open it. If an email is safe, open it. When you have completed checking the email inbox, click the HOME button.')">Directions</button>
-	<button onclick="window.location.href='main.html'">Home</button>
+	<button onclick="window.location.href='index.html'">Home</button>
 	<button onclick="alert('Try hovering over addresses to see what happens. Check spelling of emails. Notice the level of Urgency of the email sent. There are 4 phishing emails. Do not click any bad links! When you are phished, you will be notified.')">Level 1 Tips</button>
 
     <div class="center-text">
