@@ -6,9 +6,9 @@
     <title>goPhish! Game</title>
    <style>
         body {
-            background-color: #ADD8E6; /* Light blue background color */
-            font-family: Arial, sans-serif; /* Optional: sets a clean, readable font */
-            overflow: hidden; /* Ensures the fish doesn't overflow the page */
+            background-color: #ADD8E6; 
+            font-family: Arial, sans-serif; 
+            overflow: hidden; 
         }
         
         .center-text {
@@ -17,30 +17,32 @@
             position: relative;
         }
 
-        /* Add a class for the animated clownfish */
+       
         .swimming-fish {
             position: absolute;
-            top: 50%; /* Position vertically centered */
-            right: -150px; /* Start off the right edge of the page */
-            animation: swimLeft 10s linear infinite; /* 10s duration, infinite loop */
+            top: 50%; 
+            right: -150px; 
+            animation: swimLeft 20s linear infinite; 
         }
 
-        /* Define the animation to move the fish from right to left */
+        
         @keyframes swimLeft {
             0% {
-                right: -150px; /* Starts far off the right edge */
+                right: -150px; 
             }
             100% {
-                right: 100%; /* Ends off the left edge of the page */
+                right: 100%; 
             }
         }
     </style>
 </head>
 <body>
     <br><br><br><br><br><br><br><br><br>
+    
 
     <!-- Swimming fish image -->
     <img src="clownfish-swimming.gif" alt="Clownfish Swimming" class="swimming-fish">
+    /* source: https://tenor.com/view/clownfish-swimming-pattern-gif-220893688230578795 */
     
     <div class="center-text">
         <h2>goPh!sh</h2>
